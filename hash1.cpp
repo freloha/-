@@ -3,6 +3,12 @@
 #include <iostream>
 #include <unordered_set>
 
+/*
+개요 : unordered_multiset을 통하여 중복되는 값들을 받아온다.
+이후 중복값을 하나씩 제거하기 위하여 iterator를 사용하여 제거한다.
+multiset을 사용하면 검색 속도가 O(1)이기 때문에 빠르게 검색 및 삭제가 가능하다.
+*/
+
 using namespace std;
 
 string solution(vector<string> participant, vector<string> completion) {
