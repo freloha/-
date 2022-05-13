@@ -20,7 +20,7 @@ int solution(int N, int number) {
         DP[k].insert(makeN(N, k));
     for(int i = 0; i <k; i++){        
         for(int j = 0; j < k; j++){
-            if(i+j != k) continue; // 최솟값이 8보다 크면 안됨
+            if(i+j != k) continue; // 두 합이 8이 아니면 계산 하면 안됨
             for(int a : DP[i]){
                 for(int b : DP[j]){
                     DP[k].insert(a+b);
